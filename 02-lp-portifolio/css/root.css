@@ -1,0 +1,19 @@
+:root {
+
+    --bg: #F5F3EE;
+    --bg-card: #ECEAE4;
+    --ink: #1A1A18;
+    --accent: #4A6741;
+    --accent-light: #6B8F61;
+    --muted: #7A7870;
+    --line: #D8D5CE;
+    --white: #FFFFFF;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-mono: 'DM Mono', 'Courier New', monospace;
+    --font-body: 'DM Sans', sans-serif;
+
+    --max-w: 1100px;
+    --section-gap: 120px;
+}
+
