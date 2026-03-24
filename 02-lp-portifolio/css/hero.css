@@ -1,0 +1,70 @@
+#hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 140px 48px 80px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.hero-tag {
+    font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.15em;
+    /*define o espaçamento (tracking) entre os caracteres de um texto*/
+    text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 10;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+}
+
+.hero-tag::before {
+    content: '';
+    display: block;
+    /*ocupa 100% da largura disponível*/
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.hero-name {
+    font-family: var(--font-display);
+      font-size: clamp(52px, 9vw, 120px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      opacity: 10;
+      animation: fadeUp 0.9s ease 0.4s forwards;
+}
+
+.hero-name em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.hero-subtitle {
+    font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 64px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--muted);
+      line-height: 1.1;
+      margin-bottom: 48px;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.55s forwards;
+
+}
+
+
+
+
+

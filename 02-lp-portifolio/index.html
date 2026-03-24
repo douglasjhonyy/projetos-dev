@@ -8,8 +8,10 @@
     <title>Dev.portifolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -18,34 +20,40 @@
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
 
-    
+
     <!--Navbar-->
 
     <nav id="navbar">
-        <a href="#hero" class="nav-logo">dev.portifolio</a>
+        <a href="#hero" class="nav-logo">dev.portfolio</a>
         <ul class="nav-links">
-            <li><a href="#sobre"></a>Sobre</li>
-            <li><a href="#habilidades"></a>Skills</li>
-            <li><a href="#projetos"></a>Projetos</li>
-            <li><a href="#contato"></a>Contato</li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
+
+
+
+
     <!--Hero (Topo)-->
 
-    <div id="hero">
-        <span>Densenvolvedor Web em Formação</span>
+    <div id="hero" style="max-width: var(--max-w); margin: 0 auto;">
+        <span class="hero-tag">Desenvolvedor Web em Formação</span>
 
-        <h1>Seu <br><em>Nome</em></h1> <!-- br= pular linha// em= ênfase no texto-->
-        <p class="hero-sbutitle">Construindo o futuro, <br>uma linha por vez</p>
+        <h1 class="hero-name">Seu<br><em>Nome</em></h1> <!-- br= pular linha// em= ênfase no texto-->
+        <p class="hero-subtitle">Construindo o futuro,<br>uma linha por vez.</p>
 
-        <p class="hero-desc">Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por criar
+        <p class="hero-desc">
+            Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por criar
             experiências digitais com HTML, CSS, JavaScript, Java e PHP.
-            Transformando aprendizado em código real.</p>
+            Transformando aprendizado em código real.
+        </p>
 
         <div class="hero-cta">
-            <a href="#projeto" class="btn-primary">Ver Projetos</a>
-            <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn-secondary">Entrar em Contato →</a>
         </div>
 
         <span class="hero-scroll-hint">scroll</span>
