@@ -1,37 +1,60 @@
-nav{
-    position: fixed; /*Barra menu fixa, A nav gruda no topo e fica lá mesmo quando você rola a página*/
-    top: 0; 
-    left: 0; 
-    right: 0;
-
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(245, 243, 238, 0.88); /*A cor de fundo com 88% de opacidade (os 0.88 no final)*/
-    backdrop-filter: blur(12px); /*Efeito de vidro fosco — o conteúdo por baixo aparece desfocado*/
-
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease;
-}
-
-nav.scrolled {
+nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(245, 243, 238, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+ 
+    nav.scrolled {
       border-color: var(--line);
     }
-
-.nav-logo{
-    font-family: var(--font-mono);
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.nav-links {
+ 
+    .nav-logo {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-decoration: none;
+    }
+ 
+    .nav-links {
       display: flex;
       gap: 40px;
       list-style: none;
     }
-
-    
+ 
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      position: relative;
+      transition: color 0.2s;
+    }
+ 
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 1px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+ 
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+ 
+    .nav-links a:hover::after {
+      width: 100%;
+    }
