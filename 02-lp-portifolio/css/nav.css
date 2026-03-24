@@ -1,0 +1,37 @@
+nav{
+    position: fixed; /*Barra menu fixa, A nav gruda no topo e fica lá mesmo quando você rola a página*/
+    top: 0; 
+    left: 0; 
+    right: 0;
+
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(245, 243, 238, 0.88); /*A cor de fundo com 88% de opacidade (os 0.88 no final)*/
+    backdrop-filter: blur(12px); /*Efeito de vidro fosco — o conteúdo por baixo aparece desfocado*/
+
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav.scrolled {
+      border-color: var(--line);
+    }
+
+.nav-logo{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    
