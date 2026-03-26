@@ -76,12 +76,77 @@
 }
 
 .hero-cta {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-      /*opacity: 0;*/
-      animation: fadeUp 0.9s ease 0.85s forwards;
-    }
-
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    /*opacity: 0;*/
+    animation: fadeUp 0.9s ease 0.85s forwards;
     
+}
+
+.btn-primary {
+    background: var(--ink);
+    color: var(--bg);
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    text-decoration: none;
+    border: 1px solid var(--ink);
+    transition: all 0.3s ease;
+    display: inline-block;
+
+    border-radius: 18px 5px 18px 5px;
+
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+
+}
+
+.btn-secondary {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s, gap 0.2s;
+}
+
+.btn-secondary:hover {
+    color: var(--accent);
+    gap: 14px;
+}
+
+.hero-scroll-hint {
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    writing-mode: vertical-rl;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--line);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    animation: fadeIn 1s ease 1.5s forwards;
+}
+
+.hero-scroll-hint::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60px;
+    background: var(--line);
+    animation: scrollLine 2s ease-in-out 2s infinite;
+}
