@@ -33,3 +33,22 @@ section{
       color: var(--accent);
     }
 
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-text p{
+    font-size: 17px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.about-text p strong{
+    color: var(--ink);
+    font-weight: 500;
+}
