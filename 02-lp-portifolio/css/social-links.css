@@ -1,0 +1,20 @@
+.social-links{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.social-links a {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transform: color 0.2s;
+}
+
+.social-links a:hover {
+      color: var(--accent);
+    }

@@ -1,0 +1,46 @@
+#contato{
+        text-align: center;
+        padding: var(--section-gap);
+        border-top: 1px solid var(--line);
+    }
+
+    .contact-label{
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 32px;
+    }
+
+    .contact-heading{
+        font-family: var(--font-display);
+        font-size: clamp(36px, 6vw, 80px);
+        font-weight: 900;
+        line-height: 1;
+        color: var(--ink);
+        margin-bottom: 48px;
+    }
+
+     .contact-heading em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .contact-email{
+        display: inline-block;
+        font-family: var(--font-mono);
+        font-size: clamp(14px, 2.5vw, 22px);
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 6px;
+        transition: color 0.2s, border-color 0.2s;
+        margin-bottom: 56px;
+    }
+
+    .contact-email:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
