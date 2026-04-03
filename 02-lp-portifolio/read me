@@ -1,0 +1,13 @@
+📋 Sobre o Projeto
+Este projeto é uma landing page de portfólio pessoal, desenvolvida como parte da minha jornada no curso de Análise e Desenvolvimento de Sistemas (ADS) e nos cursos complementares de desenvolvimento web.
+O objetivo foi criar uma página profissional e elegante utilizando apenas tecnologias fundamentais da web — sem frameworks, sem bibliotecas externas — para consolidar e demonstrar meu aprendizado em HTML, CSS e JavaScript.
+
+✨ Funcionalidades
+
+Cursor customizado — substituição do cursor padrão por um design minimalista com animação
+Navegação fixa com efeito glassmorphism — barra de navegação com blur ao rolar a página
+Animações de entrada escalonadas — elementos surgem em sequência ao carregar a página
+Scroll Reveal — conteúdo aparece suavemente conforme o usuário rola a página
+Barras de habilidade animadas — barras de progresso que se preenchem ao entrar na viewport
+Cards de projeto interativos — inversão de cores dramática ao passar o mouse
+Design totalmente responsivo — adaptado para desktop, tablet e celular
